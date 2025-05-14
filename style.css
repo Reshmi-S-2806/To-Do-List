@@ -1,0 +1,46 @@
+body{
+    background-color: darkmagenta;
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+.inputel{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 5px;
+}
+.addbtn{
+    background-color:darkgray;
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    font-weight: 100;
+    font-weight: bold;
+    font-size: medium;
+}
+.addbtn:hover{
+    background-color: black;
+    color:aliceblue;
+    
+}
+.btn{
+    border-radius: 20px;
+    background-color:beige;
+    height: 25px;
+    width: 90px;
+    font-weight: 100;
+    font-weight: bold;
+    font-size: medium;
+}
+.btn:hover{
+    background-color: black;
+    color:aliceblue;
+}
+li{
+    color: aliceblue;
+    font-weight: 100;
+    font-size: larger;
+}
+

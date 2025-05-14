@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="C:\Users\Reshmi S\Downloads\checkbox.ico">
+</head>
+<body>
+    <h1>To-Do-List</h1>
+<input id="input" class="inputel">
+<button onclick="add()" class="addbtn">Add</button>
+<ol id="list-container">
+    <li>Reading
+    <button onclick="deleteitem(event)" class="btn">Delete</button></li>
+</ol>
+<script>
+    var ul=document.getElementById("list-container")
+    var input=document.getElementById("input")
+    function add(){
+        var listitem=document.createElement("li")
+        listitem.innerHTML=input.value+"<button onclick='deleteitem(event)' class='btn'>Delete</button>"
+        ul.append(listitem)
+        }
+    function deleteitem(event){
+        event.target.parentElement.remove()
+    }
+</script>
+</body>
+</html>
